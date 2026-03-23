@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+GamePlayer/.venv/
+Caprica.exe
+caprica.7z
+
+# Captures
+/tmp/fallout_vision/
+
+# OS
+.DS_Store
+Thumbs.db
