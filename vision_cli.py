@@ -8,8 +8,6 @@ import sys
 import io
 import base64
 import argparse
-import time
-from datetime import datetime
 
 try:
     from PyQt6.QtWidgets import QApplication
@@ -54,8 +52,7 @@ class FastCapture:
         image = primary.grabWindow(0)
         
         # Convert to bytes
-        buffer = io.BytesIO()
-        image.save(buffer, format='PNG')
+        buffer = io.BytesIO(image)
         buffer.seek(0)
         return buffer.getvalue()
 
